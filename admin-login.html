@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login - CampusFixAI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+<div class="auth-card">
+  <div class="brand">Campus<span>FixAI</span></div>
+  <p class="muted">Administrator Portal</p>
+  <form onsubmit="adminLoginPage(event)">
+    <label>Email</label>
+    <input id="email" type="email" value="admin@campusfix.ai" required>
+    <label>Password</label>
+    <input id="password" type="password" value="admin123" required>
+    <button class="btn primary full" type="submit">Admin Login</button>
+  </form>
+  <p id="msg" class="message"></p>
+  <a href="index.html">← Back to login</a>
+</div>
+<script src="js/app.js"></script>
+<script src="js/admin-login.js"></script>
+</body>
+</html>
