@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | CampusFixAI</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+<div class="auth-card">
+  <a href="index.html" class="back">← Back</a>
+  <div class="brand center">🏫 CampusFix<span>AI</span></div>
+  <h1>Welcome back</h1><p class="muted">Choose how you want to enter the demo.</p>
+  <button class="role-btn" onclick="enterAs('student')"><span>👨‍🎓</span><div><b>Student</b><small>Report and track campus issues</small></div>→</button>
+  <button class="role-btn" onclick="enterAs('admin')"><span>👨‍💼</span><div><b>Administrator</b><small>Manage and resolve complaints</small></div>→</button>
+  <p class="demo-note">Demo mode: no password required.</p>
+</div>
+<script src="js/app.js"></script>
+<script>
+function enterAs(role){
+  localStorage.setItem('cf_role', role);
+  location.href = role === 'admin' ? 'admin.html' : 'student.html';
+}
+</script>
+</body>
+</html>
