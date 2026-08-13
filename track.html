@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Complaint - CampusFixAI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="brand" href="student.html">Campus<span>FixAI</span></a>
+  <button class="btn small" onclick="logout()">Logout</button>
+</nav>
+<main class="container narrow">
+<section class="card">
+  <p class="eyebrow">TRACK ISSUE</p>
+  <h1>Track a Complaint</h1>
+  <form onsubmit="trackComplaint(event)" class="inline-form">
+    <input id="trackId" placeholder="Enter complaint ID, e.g. CF-123456" required>
+    <button class="btn primary">Track</button>
+  </form>
+</section>
+<section id="trackResult"></section>
+</main>
+<script src="js/app.js"></script>
+<script src="js/track.js"></script>
+</body>
+</html>
